@@ -1,0 +1,42 @@
+body{
+    margin: 0px;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-areas:
+    "hd hd hd"
+    "mn mn mn"
+    "ft ft ft";
+    grid-template-columns:100%;
+    grid-template-rows:8vh 82vh 10vh;
+}
+header{
+    grid-area: hd;
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+}
+#main{
+    grid-area: mn;
+    background-color: coral;
+    display: flex;
+    flex-direction: column;
+}
+#ordered{
+    background-color: salmon;
+    height: 40%;
+    width: 100%;
+}
+#devider{
+    background-color: orangered;
+    height: 5%;
+    width: 100%;
+}
+#menu{
+    background-color: brown;
+    height: 55%;
+    width: 100%;
+}
+footer{
+    grid-area: ft;
+    background-color: skyblue;
+}
