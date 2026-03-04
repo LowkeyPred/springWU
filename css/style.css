@@ -26,15 +26,48 @@ header{
     height: 40%;
     width: 100%;
 }
-#devider{
+#divider{
     background-color: orangered;
     height: 5%;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.menu-sort{
+    height:100%;
+    width: 7%;
+    background-color: aqua;
+    border-radius: 4px;
+}
+#pizza{
+    background-color: darkorange;
+}
+#kebab{
+    background-color: brown;
+}
+#salad{
+    background-color: greenyellow;
+}
+#hamburgare{
+    background-color: royalblue;
+}
+#lasagne{
+    background-color:darkmagenta;
 }
 #menu{
     background-color: brown;
     height: 55%;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.menu-item{
+    height:20% ;
+    width:30%;
+    background-color: aliceblue;
+    margin: 2% 0 0 2%;
+    border-radius: 1em;
 }
 footer{
     grid-area: ft;
