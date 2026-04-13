@@ -9,11 +9,18 @@ body{
     grid-template-columns:100%;
     grid-template-rows:8vh 82vh 10vh;
 }
+@font-face {
+    font-family:hello;
+    src: url(../misc/RusticRoadway.otf) format("opentype");
+}
 header{
     grid-area: hd;
     display: flex;
     justify-content: center;
     background-color: aquamarine;
+}
+h1{
+    font-family:"hello";
 }
 #main{
     grid-area: mn;
