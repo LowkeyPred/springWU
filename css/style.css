@@ -35,7 +35,11 @@ footer{
 
 
 
-/*      For index.html        */
+/*      For index.html        
+                        Fixa #ordered till sidan och reveal med JS
+                        Ta bort andra maträtter, använd för att sortera pizzor
+                        
+*/
 #ordered{
     background-color: salmon;
     height: 40%;
