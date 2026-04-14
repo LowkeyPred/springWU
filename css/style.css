@@ -6,7 +6,6 @@ body{
     "hd hd hd"
     "mn mn mn"
     "ft ft ft";
-    grid-template-columns:100%;
     grid-template-rows:8vh 82vh 10vh;
 }
 @font-face {
@@ -28,6 +27,15 @@ h1{
     display: flex;
     flex-direction: column;
 }
+footer{
+    grid-area: ft;
+    background-color: skyblue;
+}
+
+
+
+
+/*      For index.html        */
 #ordered{
     background-color: salmon;
     height: 40%;
@@ -45,6 +53,7 @@ h1{
     width: 7%;
     background-color: aqua;
     border-radius: 4px;
+    margin-right: 1em;
 }
 #pizza{
     background-color: darkorange;
@@ -68,15 +77,18 @@ h1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    overflow-y: scroll;
 }
 .menu-item{
-    height:20% ;
+    height:40% ;
     width:30%;
     background-color: aliceblue;
     margin: 2% 0 0 2%;
     border-radius: 1em;
 }
-footer{
-    grid-area: ft;
-    background-color: skyblue;
-}
+
+/*      for order.html        */
+
+/*      for aboutUs.html      */
+
+/*      for apply.html        */
