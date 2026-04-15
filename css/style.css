@@ -6,7 +6,6 @@ body{
     "hd hd hd"
     "mn mn mn"
     "ft ft ft";
-    grid-template-rows:8vh 82vh 10vh;
 }
 @font-face {
     font-family:hello;
@@ -16,20 +15,26 @@ header{
     grid-area: hd;
     display: flex;
     justify-content: center;
-    background-color: aquamarine;
+    background-color: rgb(41, 34, 28);
 }
 h1{
     font-family:"hello";
+    color: antiquewhite;
 }
 #main{
     grid-area: mn;
-    background-color: coral;
+    background-color: rgb(31, 26, 25);
     display: flex;
     flex-direction: column;
+    min-height:100vh;
 }
 footer{
     grid-area: ft;
-    background-color: skyblue;
+    background-color: rgb(10, 9, 8);
+}
+footer li a{
+    text-decoration: none;
+    color: rgb(83, 81, 78);
 }
 
 
@@ -42,13 +47,21 @@ footer{
 */
 #ordered{
     background-color: salmon;
-    height: 40%;
-    width: 100%;
+    height: 91vh;
+    width: 100vw;
+    position: absolute;
+    bottom:-10vh;
+    right: 100vw;
+    transition: 1s;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: scroll;
 }
 #divider{
     background-color: orangered;
-    height: 5%;
-    width: 100%;
+    height: 10vh;
+    width: 100vw;
     display: flex;
     flex-direction: row;
 }
@@ -58,6 +71,14 @@ footer{
     background-color: aqua;
     border-radius: 4px;
     margin-right: 1em;
+}
+.broad{
+    display: flex;
+    flex-direction:row;
+}
+.tall{
+    display: flex;
+    flex-direction: column;
 }
 #pizza{
     background-color: darkorange;
@@ -74,10 +95,14 @@ footer{
 #lasagne{
     background-color:darkmagenta;
 }
+#toggle_button{
+    color: aqua;
+    background-color: black;
+}
 #menu{
     background-color: brown;
-    height: 55%;
-    width: 100%;
+    height: 90vh;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -85,14 +110,23 @@ footer{
 }
 .menu-item{
     height:40% ;
-    width:30%;
+    width:20%;
     background-color: aliceblue;
-    margin: 2% 0 0 2%;
+    margin: 4% 0 0 4%;
     border-radius: 1em;
 }
 
 /*      for order.html        */
 
 /*      for aboutUs.html      */
+.text_component{
+    margin:0 2em 0 2em;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: antiquewhite;
+}
+.media_component{
+    justify-self: center;
+}
 
 /*      for apply.html        */
