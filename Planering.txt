@@ -1,0 +1,5 @@
+Yo,angelo
+
+Lägg all tid på order sidan då det är den som visar mest kundskap.
+
+Gör också ordered tabben till en ul med pop-out med ingredienser.

@@ -16,17 +16,18 @@ header{
     display: flex;
     justify-content: center;
     background-color: rgb(41, 34, 28);
+    height:10vh;
 }
 h1{
     font-family:"hello";
     color: antiquewhite;
+    align-self: center;
 }
 #main{
     grid-area: mn;
     background-color: rgb(31, 26, 25);
     display: flex;
     flex-direction: column;
-    min-height:100vh;
 }
 footer{
     grid-area: ft;
@@ -47,30 +48,31 @@ footer li a{
 */
 #ordered{
     background-color: salmon;
-    height: 91vh;
+    height: 80vh;
     width: 100vw;
     position: absolute;
-    bottom:-10vh;
+    bottom:0px;
     right: 100vw;
-    transition: 1s;
+    transition: 0.67s;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     overflow-y: scroll;
 }
 #divider{
     background-color: orangered;
     height: 10vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .menu-sort{
     height:100%;
     width: 7%;
     background-color: aqua;
     border-radius: 4px;
-    margin-right: 1em;
+    margin: 1em;
 }
 .broad{
     display: flex;
@@ -98,10 +100,11 @@ footer li a{
 #toggle_button{
     color: aqua;
     background-color: black;
+    font-size: 1em;
 }
 #menu{
     background-color: brown;
-    height: 90vh;
+    height: 80vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -111,9 +114,34 @@ footer li a{
 .menu-item{
     height:40% ;
     width:20%;
-    background-color: aliceblue;
+    background-color: rgb(41, 34, 28);
     margin: 4% 0 0 4%;
     border-radius: 1em;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-item h2{
+    margin: 0px;
+}
+.menu-item img{
+    width: 50%;
+}
+.menu-item button{
+    border-radius: 0px;
+    background-color: orange;
+    width: 80%;
+    margin: 0px 10% 0px 10%;
+    height: 40px;
+    color: white;
+    font-size: 2em;
+    background-image: url(/img/button_background.jpg);
+}
+.menu-item button :hover{
+    filter:grayscale(0.5);
+    
 }
 
 /*      for order.html        */
@@ -130,3 +158,34 @@ footer li a{
 }
 
 /*      for apply.html        */
+
+
+
+
+@media screen and (max-width: 480px) {
+    .menu-item{
+        height:40% ;
+        width:41%;
+        background-color: rgb(67, 67, 67);
+        margin: 4% 0 0 4%;
+        border-radius: 1em;
+  }
+  .menu-item img{
+    width: 90%;
+}
+#divider{
+    background-color: orangered;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+}
+  .menu-sort{
+    height:100%;
+    width: 7%;
+    background-color: aqua;
+    border-radius: 4px;
+    
+}
+}
